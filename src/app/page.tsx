@@ -3,14 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="container mx-auto mt-10">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 text-center max-w-6xl mx-auto">
+      
+      <div className="flex flex-col md:flex-row  gap-10  max-w-6xl ">
         <div className="">
-          <Image src="/logo.png" alt="logo" width={500} height={500} />
+          <Image src="/logo.png" alt="logo" width={800} height={800} />
         </div>
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col  justify-center">
           <h1 className="text-6xl font-bold">Acelera tu desarrollo de software sin sacrificar calidad</h1>
-          <p className="text-2xl mt-10">
-          La solución definitiva para equipos que quieren hacer más en menos tiempo
+          <p className="text-2xl mt-10 text-center">
+            La inteligencia artificial al servicio de los programadores que quieren evolucionar
           </p>
         </div>
       </div>
@@ -219,7 +220,7 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto py-12">
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold mb-8 text-center">Programming Languages</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center">Lenguajes de programacion usados en los proyectos</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="flex flex-col items-center">
@@ -288,6 +289,212 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="mt-20 bg-gray-50 py-16">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">Proyectos por Nivel y Tecnología</h2>
+          
+          <div className="space-y-16">
+            {/* Nivel Principiante */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-center">Nivel Principiante</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://www.python.org/static/community_logos/python-logo-generic.svg"
+                      alt="Python"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Python</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Calculadora simple</li>
+                    <li>• Lista de tareas (CLI)</li>
+                    <li>• Juego de adivinanzas</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png"
+                      alt="C#"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">C#</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Conversor de unidades</li>
+                    <li>• Gestor de contactos</li>
+                    <li>• Calculadora de IMC</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://www.vectorlogo.zone/logos/java/java-ar21.svg"
+                      alt="Java"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Java</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Agenda telefónica</li>
+                    <li>• Juego del ahorcado</li>
+                    <li>• Calculadora de préstamos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Nivel Intermedio */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-center">Nivel Intermedio</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://www.python.org/static/community_logos/python-logo-generic.svg"
+                      alt="Python"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Python</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• API REST con Flask</li>
+                    <li>• Web Scraper</li>
+                    <li>• Dashboard con Django</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://www.rust-lang.org/static/images/rust-logo-blk.svg"
+                      alt="Rust"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Rust</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• CLI para gestión de archivos</li>
+                    <li>• Servidor TCP simple</li>
+                    <li>• Parser de JSON personalizado</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg"
+                      alt="Bash"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Bash</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Monitor de sistema</li>
+                    <li>• Backup automatizado</li>
+                    <li>• Gestor de procesos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Nivel Avanzado */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-center">Nivel Avanzado</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://www.rust-lang.org/static/images/rust-logo-blk.svg"
+                      alt="Rust"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Rust</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Motor de base de datos</li>
+                    <li>• Sistema de archivos distribuido</li>
+                    <li>• Compilador simple</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://www.python.org/static/community_logos/python-logo-generic.svg"
+                      alt="Python"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">Python</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Sistema de ML distribuido</li>
+                    <li>• Orquestador de microservicios</li>
+                    <li>• Framework de testing</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png"
+                      alt="C#"
+                      className="h-8 object-contain"
+                    />
+                    <h4 className="text-xl font-semibold">C#</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Motor de juegos 3D</li>
+                    <li>• Sistema de trading automatizado</li>
+                    <li>• CMS empresarial</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-20 bg-gradient-to-r from-blue-600 to-indigo-700 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Lanzamiento Especial: 28 de Febrero 2025
+            </h2>
+            <p className="text-xl text-white/90 mb-8">
+              Sé el primero en acceder a nuestra plataforma. Regístrate ahora para recibir acceso prioritario y beneficios exclusivos de lanzamiento.
+            </p>
+
+            <form 
+              action="https://api.airtable.com/v0/patdZOTy3SRdeE1WB/Subscribers"
+              method="POST"
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Tu correo electrónico"
+                className="px-6 py-3 rounded-lg text-gray-800 w-full sm:w-96 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-200"
+              >
+                Registrarme
+              </button>
+            </form>
+
+            <p className="text-sm text-white/70 mt-4">
+              Te notificaremos cuando estemos listos para el lanzamiento. No spam, prometido.
+            </p>
+          </div>
+        </div>
+      </div>
 
 
     </div>
